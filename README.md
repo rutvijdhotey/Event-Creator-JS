@@ -39,4 +39,9 @@ Please note that I have used Jquery and just have the internet connected to acce
 
 TO OPEN:
 To open the application, just open the Index.html file.
+
+Example Screen : 
+
+
+![Alt text](/images/scrsht.png)
 Thank you, and Enjoy, Rutvij Dhotey.
