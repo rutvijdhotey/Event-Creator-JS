@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset= "UTF-8"/>
+  <title>TimedEvent Application Page</title>
+  <link rel="stylesheet" type="text/css" href="./styles/styles.css"></link>
+</head>
+
+<body>
+  <button id = "add-button">
+    Add a lifetime
+  </button>
+  <span id = "delete-notice">
+    Double Click on Event to Delete
+  </span>
+
+  <span  id = "delete-undo">
+    <img id = "undo_button" src = "./images/undo.png" width = "20px" height = "auto" />
+  </span>
+  <div>
+    <form id = "add-new-element">
+
+        Name:<br>
+        <input type="text" id="name" autofocus=""></input>
+        <br><br>
+
+        Birth:<br>
+        <input type="text" id="birth" > </input>
+        <br><br>
+
+        Death:<br>
+        <input type="text" id="death" ></input>
+        <br><br>
+
+        Summary:<br>
+        <textarea type="text" id="summary" ></textarea>
+        <br><br>
+
+        <button type="submit"> Add </button>
+        <button type= "button" onclick="cancel()"> Cancel </button>
+    </form>
+  </div>
+
+  <div id = "container"> <!--Main Container--></div> <!--End of main container-->
+
+  <!-- getting in the scripts required -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type = "text/javascript" src = "./scripts/Data/data.js"></script>
+  <script type="text/javascript" src="./scripts/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+/************** Container CSS *****************/
+body {
+    font: 7.5px Ubuntu, Arial, sans-serif;
+    background-color: #676767;
+}
+
+div {
+    margin-top: 2em;
+}
+
+/************** SCALE CSS *****************/
+
+#x_axis, #x_axis li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+/* IE6-7 Fix */
+
+#x_axis {
+    background: #3a3e46;
+    border-radius: 4px;
+    border: 2px solid #3a3e46;
+    color: #fff;
+    margin: 0;
+    height: 3em;
+    padding-right: 1cm;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 3px;
+}
+#x_axis li {
+    padding-left: 4em;
+    width: 4em;
+    margin: .64em -1em -.64em;
+    text-align: center;
+    position: relative;
+}
+
+#x_axis li:before {
+    content: '';
+    position: absolute;
+    border-left: 1px solid #ccc;
+    height: .64em;
+    top: -.64em;
+    right: 1em;
+}
+
+/*************** EVENT STYLE *************/
+
+.one-event-lane,.one-event-lane-li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.one-event-lane-li{
+    display: inline-block;
+    border: 2px #fff;
+    border-radius: 10px;
+    background-color: #4194ff;
+    width: 6em; /*Change this*/
+    height: 1.8em; /*Change this*/
+    bottom: 5em;  /*Change this*/
+    position: absolute;
+    margin-left: 6em;
+}
+
+.label {
+    text-align: center;
+    padding-top: 0.1em;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 0em;
+}
+
+.label:hover{
+  color : black;
+  visibility: visible;
+  -webkit-transition: all 0.7s ease;
+  cursor:pointer;
+}
+
+.summary {
+  font-size: 12px;
+  background: #f39a48;
+  border-radius: 4px;
+  position: inherit;
+  padding: 2px 2px 2px 2px;
+  display: none;
+  -webkit-transition: all 0.7s ease;
+}
+
+.one-event-lane-li:hover{
+  background-color: rgba(82, 210, 116, 0.63);
+  -webkit-transition: all 0.7s ease;
+}
+
+/********************** ADD BUTTON CSS *********************/
+
+/*Add Button*/
+#add-button {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+  background: #23da57;
+  width: 7em;
+  padding: 4px;
+  border-radius: 1em;
+  text-align: center;
+  border-width: 0px;
+  box-sizing: inherit;
+  position: fixed;
+    z-index: 20;
+}
+
+#add-button:hover{
+  background-color: #0fb53e;
+  -webkit-transition: all 0.7s ease;
+  cursor:pointer;
+}
+
+
+/* **************** Form CSS ****************** */
+#add-new-element {
+  font-size: 12px;
+  color: white;
+  margin: 10em;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  padding: 5px 5px 5px 5px;
+  width: 17.5em;
+  background-color: #4194ff;
+  display: none;
+  position: fixed;
+  z-index: 999;
+}
+
+
+/* ***************Delete Notice************* */
+#delete-notice {
+  font-size: 1em;
+    font-weight: 700;
+    color: white;
+    background: red;
+    padding: 4px;
+    border-radius: 1em;
+    text-align: center;
+    border-width: 0px;
+    box-sizing: inherit;
+    z-index: 20;
+    margin-left: 90px;
+    /* margin-top: 0px; */
+    position: fixed;
+}
+
+/* ***************Delete Notice************* */
+
+/* Delete Notification*/
+#delete-undo {
+  font-size: 1em;
+font-weight: 500;
+color: white;
+/* width: 7em; */
+padding: 4px;
+border-radius: 1em;
+text-align: center;
+border-width: 0px;
+box-sizing: inherit;
+position: fixed;
+z-index: 20;
+/* float: right; */
+cursor: pointer;
+right: 10px;
+}
+
+/*******************Grid Styling *******************/
+
+th{
+    border-right: 1px dashed grey;
+    width: 56.28px;
+    height: 100%;
+}
+
+#grid{
+  height: 100%;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+  border-collapse: collapse;
+}
